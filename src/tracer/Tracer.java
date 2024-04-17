@@ -55,7 +55,7 @@ public class Tracer {
 
 	public void init() {
 		// Camera
-		Camera camera = new Camera(1920, new Vec3(0,0,0),new Vec3(0,0,0), 90, 90, (16.0/9.0));
+		Camera camera = new Camera(1920, new Vec3(0,0,0),new Vec3(0,0,0), 200, 120, (16.0/9.0));
 		width = camera.width();
 		height = camera.height();
 		int max_depth = 50;
@@ -75,7 +75,7 @@ public class Tracer {
 		//world.add(new Sphere(new Vec3(-R - 0.4, 0, -1), R, material_left));
 		//world.add(new Sphere(new Vec3(R + 0.4, 0, -1), R, material_right));
 
-		 world.add(new Sphere(new Vec3(0,-100.5,-1), 100, material_ground));
+		world.add(new Sphere(new Vec3(0,-100.5,-1), 100, material_ground));
 		world.add(new Sphere(new Vec3(0,0,-1), 0.5 , material_center));
 		world.add(new Sphere(new Vec3(-1,0,-1), 0.5, material_left));
 		world.add(new Sphere(new Vec3(1,0,-1), 0.5, material_right));
